@@ -25,7 +25,7 @@ function subcanvas(
   const canvas = document.createElement("canvas");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  document.getElementById("root")?.appendChild(canvas);
+  // document.getElementById("root")?.appendChild(canvas);
   draw(canvas.getContext("2d")!);
   return canvas;
 }
@@ -118,7 +118,7 @@ export function drawFlower(ctx: CanvasRenderingContext2D) {
         leftOrRight /= 3;
       } else {
         leftOrRight /= 5;
-        leftOrRight += 0.7;
+        leftOrRight += 0.75;
       }
       const x = leftOrRight * window.innerWidth;
       const y = Math.random() * 200;
@@ -140,7 +140,7 @@ export function drawFlower(ctx: CanvasRenderingContext2D) {
     }
   }
 
-  flowerPot(750, -200);
+  flowerPot(725, -200);
   for (let i = 0; i < 7000; i++) {
     const [x, y] = randomPoint(1);
     puff(x, y, randomChoose(leafShades), 0.5);
