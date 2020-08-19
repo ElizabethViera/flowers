@@ -107,7 +107,6 @@ export function drawFlower(ctx: CanvasRenderingContext2D) {
       }
       const x = leftOrRight * window.innerWidth;
       const y = Math.random() * 200;
-      const r = (2 + (y - 200) ** 2) ** 0.5;
 
       ctx.fillStyle = `#FFF`;
       ctx.fillRect(x - 10, y - 10 + 200, 20, 20);
@@ -123,7 +122,6 @@ export function drawFlower(ctx: CanvasRenderingContext2D) {
       }
       const x = leftOrRight * window.innerWidth;
       const y = Math.random() * 200;
-      const r = (2 + (y - 200) ** 2) ** 0.5;
 
       ctx.fillStyle = `#777`;
       ctx.fillRect(x - 10, y - 10 + 160, 20, 20);

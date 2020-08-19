@@ -8,7 +8,7 @@ function View({ draw }: { draw: (ctx: CanvasRenderingContext2D) => void }) {
   React.useEffect(() => {
     const ctx = canvasRef.current.getContext("2d")!;
     draw(ctx);
-  }, []);
+  }, [draw]);
   return <canvas width={window.innerWidth} height={window.innerHeight} ref={canvasRef} />;
 }
 
